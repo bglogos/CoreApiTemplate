@@ -21,6 +21,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApiTemplate.Models", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApiTemplate.Data", "CoreApiTemplate.Data\CoreApiTemplate.Data.csproj", "{ADF10B26-C74C-4300-964D-B9559678B7AB}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{602E957E-6B49-4799-9B96-E05E61409161}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nginx", "nginx", "{8F24781B-9343-473D-BA43-E6F2CD4786B3}"
+	ProjectSection(SolutionItems) = preProject
+		nginx\Dockerfile = nginx\Dockerfile
+		nginx\nginx.conf = nginx\nginx.conf
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +63,10 @@ Global
 		{ADF10B26-C74C-4300-964D-B9559678B7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADF10B26-C74C-4300-964D-B9559678B7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADF10B26-C74C-4300-964D-B9559678B7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{602E957E-6B49-4799-9B96-E05E61409161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{602E957E-6B49-4799-9B96-E05E61409161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{602E957E-6B49-4799-9B96-E05E61409161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{602E957E-6B49-4799-9B96-E05E61409161}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

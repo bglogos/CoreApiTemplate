@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <CodeAnalysisRuleSet>..\configs\analizers.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
 
@@ -22,7 +22,7 @@
     <PackageReference Include="System.Runtime.Analyzers" Version="1.1.0">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="SonarAnalyzer.CSharp" Version="6.8.1.4648">
+    <PackageReference Include="SonarAnalyzer.CSharp" Version="7.9.1.7622">
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
   </ItemGroup>

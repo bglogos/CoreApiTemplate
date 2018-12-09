@@ -93,6 +93,10 @@ namespace CoreApiTemplate.Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseHsts();
+            }
 
             app.UseMvc();
         }

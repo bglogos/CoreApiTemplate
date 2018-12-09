@@ -19,7 +19,7 @@ namespace CoreApiTemplate.Core.Helpers
         public static bool IsValidBase64Data(string data)
         {
             string trimmedData = data.Trim();
-            return !string.IsNullOrWhiteSpace(data) &&
+            return !string.IsNullOrEmpty(trimmedData) &&
                 (trimmedData.Length % 4 == 0) &&
                 Regex.IsMatch(trimmedData, AppConstants.Base64Regex, RegexOptions.None);
         }
