@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -14,10 +14,6 @@
   <ItemGroup>
     <ProjectReference Include="..\CoreApiTemplate.Core\CoreApiTemplate.Core.csproj" />
     <ProjectReference Include="..\CoreApiTemplate.Models\CoreApiTemplate.Models.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup Label="Projects and Files Reference">
