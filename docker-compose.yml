@@ -8,15 +8,13 @@ services:
       dockerfile: CoreApiTemplate.Api/Dockerfile
     expose:
       - "80"
-      - "443"
 
   proxy:
-    image: ${DOCKER_REGISTRY-}nginx
+    image: ${DOCKER_REGISTRY-}coreapitemplatenginx
     build:
       context:  ./nginx
       dockerfile: Dockerfile
     ports:
-      - "80"
-      - "443"
-    depends_on:
+      - "80:80"
+    links:
       - coreapitemplate.api

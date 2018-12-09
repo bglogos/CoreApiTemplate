@@ -1,7 +1,6 @@
 FROM microsoft/dotnet:sdk AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
 FROM microsoft/dotnet:sdk AS build
 WORKDIR /src
@@ -24,5 +23,5 @@ RUN dotnet publish "CoreApiTemplate.Api.csproj" -c Release -o /app
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app .
-
+	
 ENTRYPOINT ["dotnet", "CoreApiTemplate.Api.dll"]
